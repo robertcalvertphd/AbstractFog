@@ -1,0 +1,3 @@
+#   can compete
+#   has attributes
+#
