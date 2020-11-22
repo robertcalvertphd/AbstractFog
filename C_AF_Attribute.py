@@ -3,13 +3,13 @@
 #   is agnostic of the asker
 
 class AF_Attribute:
-    def __init__(self, values, acting_functions, name = "unnamed attribute"):
-        self.acting_functions = acting_functions
+    def __init__(self, values, action_functions, name = "unnamed attribute"):
+        self.action_functions = action_functions
         self.values = values
         self.name = name
 
     def enact(self, function_id, **kwargs):
-        self.acting_functions[function_id](**kwargs)
+        self.action_functions[function_id](**kwargs)
 
 
 

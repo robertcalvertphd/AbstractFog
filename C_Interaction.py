@@ -4,10 +4,10 @@ from C_Actor import Actor
 from C_AF_Attribute import AF_Attribute as Attribute
 
 class Interaction:
-    def __init__(self, governing_function, actorA, actorB, name = "default interaction name"):
+    def __init__(self, interaction_function, actorA, actorB, name = "default interaction name"):
         self.actorA = actorA
         self.actorB = actorB
-        self.governing_function = governing_function
+        self.governing_function = interaction_function
         self.name = name
 
     def interact(self, **kwargs):
@@ -15,6 +15,10 @@ class Interaction:
         assert status is not False, "invalid interaction in" + self.name # for debug use only.
         return returns
 
+    @staticmethod
+    def generic_strength_agility_interaction_function(attacker, defender):
+        print("there was an interaction between ", attacker.name, " and ", defender.name)
+        return True, None
 
 '''
 def example_compete1(x):
