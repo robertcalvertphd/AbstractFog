@@ -1,11 +1,9 @@
 import random as r
 
-from C_Actor import Actor
-from C_Organization import Organization
-from C_AF_Attribute import AF_Attribute
-from C_AF_Event import AF_Event
-from C_Interaction import Interaction
-import ENUMS as E
+from DEPRECATED.C_Actor import Actor
+from DEPRECATED.C_Organization import Organization
+from DEPRECATED.C_AF_Attribute import AF_Attribute
+
 
 # defines attribute functions
 # defines other rules that make this no longer generic

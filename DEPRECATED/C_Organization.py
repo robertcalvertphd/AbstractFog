@@ -1,6 +1,6 @@
 # A series of Events
-from C_AF_Event import AF_Event
-from C_Interaction import Interaction
+from DEPRECATED.C_AF_Event import AF_Event
+from DEPRECATED.C_Interaction import Interaction
 
 
 class Organization:

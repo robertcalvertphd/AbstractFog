@@ -1,5 +1,5 @@
 # A series of interactions
-from C_Interaction import  Interaction
+from DEPRECATED.C_Interaction import  Interaction
 
 
 class AF_Event:
@@ -17,7 +17,7 @@ class AF_Event:
     def poke_event_function(guyA, guyB):
         print(guyA.name + " pokes " + guyB.name)
 
-        # DGK: DO you want to instantiate Interaction here, or at Organization? I think the latter.
+        # DGK: DO you want to instantiate Interaction here, or at AF_Organization? I think the latter.
         str_agi_interaction = Interaction(Interaction.generic_strength_agility_interaction_function, guyA, guyB)
 
         str_agi_interaction.interact()

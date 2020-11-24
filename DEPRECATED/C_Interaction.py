@@ -1,7 +1,4 @@
 # a collection of attribute comparisons
-from ENUMS import E
-from C_Actor import Actor
-from C_AF_Attribute import AF_Attribute as Attribute
 
 class Interaction:
     def __init__(self, interaction_function, actorA, actorB, name = "default interaction name"):
